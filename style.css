@@ -120,6 +120,18 @@ main{
 }
 
 .exclamacion{
-    width: 15px;
-    margin-right: 5px;
+        font-size: 15px;
+        margin-right: 5px;
+}
+
+.piePagina{
+    margin-right: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.icon{
+    padding-left: 12px;
+    width: 25px;
+    height: 25px;
 }
