@@ -68,6 +68,19 @@ main{
     background: #8f3838;
 }
 
+p{
+    font-family: 'Inter';
+    font-size: 14px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+p:hover{
+    color: #af3737;
+}
+
 .botones{
     display: flex;
     margin-top: 10px;
@@ -78,7 +91,7 @@ main{
     box-shadow: -3px 3px #ffffff;
     background-color: #ffffff;
     color: black;
-    border: 1px solid #ffffff;
+    border: 1px solid black;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 20px;
@@ -90,6 +103,13 @@ main{
 .btencriptar:hover{
         transform: scale(1.1);
         cursor: pointer;
+}
+
+.btencriptar:active{
+        transition: 50ms;
+        background-color: black;
+        color: #ffffff;
+        border-color: #ffffff;
 }
 
 .btdesencriptar{
@@ -109,15 +129,26 @@ main{
     cursor: pointer;
 }
 
+.btdesencriptar:active{
+    transition: 50ms;
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+}
+
 .imgBorrar{
     height: 40px;
+    background: none;
 }
 
 .borrar{
-    margin-left: 20px;
-    border: none;
+    margin-left: 25px;
+    border: 1px solid #ffffff;
     transition: 500ms;
     height: 47px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -3px 3px #ffffff;
 }
 
 .borrar:hover{
@@ -125,11 +156,16 @@ main{
     cursor: pointer;
 }
 
+.borrar:active{
+    transition: 50ms;
+    background-color: #af3737;
+}
+
 .copiar{
     box-shadow: 3px -3px #ffffff;
     background-color: #ffffff;
     color: black;
-    border: 1px solid #ffffff;
+    border: 1px solid black;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 20px;
@@ -144,6 +180,13 @@ main{
 .copiar:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.copiar:active{
+    transition: 50ms;
+    background-color: black;
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 .informacion{
@@ -172,6 +215,7 @@ main{
     transform: scale(1.2);
 }
 
+
 @media (max-width:1154px){
     .logo{
         width: 35%;
@@ -185,10 +229,16 @@ main{
         height: 95%;
         font-size: 28px;
     }
+    .informacion{
+        font-size: 55%;
+    }
+    p{
+        font-size: 23%;
+    }
     .botones, .informacion, .copiar{
         margin-left: 10%;
         margin: 5%;
-        width: 95%;
+        width: 92%;
     }
     .piePagina{
         justify-content: center;
