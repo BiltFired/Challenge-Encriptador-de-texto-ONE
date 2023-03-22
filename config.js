@@ -16,7 +16,7 @@ function encriptar(texto) {
     };
     for (let clave in diccionario) {
         let regex = new RegExp(clave, 'g');
-        encriptado = encriptado.replace(regex, diccionario[clave]);
+        encriptado = encriptado.replaceAll(regex, diccionario[clave]);
     }
     return encriptado;
 }
@@ -32,7 +32,7 @@ function desencriptar(texto) {
     };
     for (let clave in diccionario) {
         let regex = new RegExp(clave, 'g');
-        desencriptado = desencriptado.replace(regex, diccionario[clave]);
+        desencriptado = desencriptado.replaceAll(regex, diccionario[clave]);
     }
     return desencriptado;
 }
@@ -46,6 +46,8 @@ function handleClickEncriptar() {
     let texto = textArea.value;
     let resultado = encriptar(texto);
     mensajeArea.value = resultado;
+    textArea.value = "";
+    mensajeArea.style.backgroundImage = "none"
 }
 
 function handleClickCopiar() {

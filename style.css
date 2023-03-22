@@ -64,6 +64,10 @@ main{
     outline: none;
 }
 
+.mensajeArea::selection{
+    background: #8f3838;
+}
+
 .botones{
     display: flex;
     margin-top: 10px;
