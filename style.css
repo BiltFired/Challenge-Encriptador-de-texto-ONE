@@ -77,7 +77,6 @@ main{
     border: 1px solid #ffffff;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    cursor: pointer;
     font-size: 20px;
     height: 45px;
     width: 200px;
@@ -86,6 +85,7 @@ main{
 
 .btencriptar:hover{
         transform: scale(1.1);
+        cursor: pointer;
 }
 
 .btdesencriptar{
@@ -94,7 +94,6 @@ main{
     border: 1px solid #ffffff;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    cursor: pointer;
     font-size: 20px;
     margin-left: 25px;
     height: 45px;
@@ -103,6 +102,23 @@ main{
 }
 .btdesencriptar:hover{
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+.imgBorrar{
+    height: 40px;
+}
+
+.borrar{
+    margin-left: 20px;
+    border: none;
+    transition: 500ms;
+    height: 47px;
+}
+
+.borrar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .copiar{
@@ -112,7 +128,6 @@ main{
     border: 1px solid #ffffff;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    cursor: pointer;
     font-size: 20px;
     height: 45px;
     width: 200px;
@@ -124,6 +139,7 @@ main{
 
 .copiar:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .informacion{
@@ -152,9 +168,9 @@ main{
     transform: scale(1.2);
 }
 
-@media (max-width:700px){
+@media (max-width:1154px){
     .logo{
-        width: 30%;
+        width: 35%;
     }
     main{
         flex-direction: column;
@@ -176,7 +192,7 @@ main{
         font-size: 68px;
     }
     .icon{
-        width: 30px;
-        height: 30px;
+        height: 50%;
+        width: 35px;
     }
 }
